@@ -1,0 +1,2 @@
+#!/bin/sh
+rsync -r --exclude=".git" . andresj_riofrios@nfsn:/home/public/regeo

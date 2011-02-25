@@ -1,0 +1,97 @@
+body {
+    font-family: 'Droid Sans', Helvetica, sans-serif;
+    margin: 0;
+}
+
+hgroup {
+    display: block;
+    padding: 0.2em 0.36em;
+    margin: 0 0 2em 0;
+
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, rgb(205,213,223)),
+        color-stop(0.03, rgb(176,188,205)),
+        color-stop(0.5, rgb(136,155,179)),
+        color-stop(0.51, rgb(129,149,175)),
+        color-stop(0.97, rgb(109,132,162)),
+        color-stop(0.99, rgb(45,54,66))
+    );
+    background: -moz-linear-gradient(
+        center top,
+        rgb(205,213,223) 0%,
+        rgb(176,188,205) 3%,
+        rgb(136,155,179) 50%,
+        rgb(129,149,175) 51%,
+        rgb(109,132,162) 97%,
+        rgb(45,54,66) 99%
+    );
+
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.597656) 0px -1px 0px;
+}
+
+h1, h2 { margin: 0.1em 0; text-align: center; }
+h1 { font-size: 150%; }
+h2 { font-size: 100%; }
+
+ul#notifications {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul#notifications li {
+    display: block
+    width: 15em;
+    margin: 0 auto;
+    
+    text-align: center;
+}
+
+.loading {
+    background: url(loading.gif) no-repeat;
+    background-position: center top;
+    padding-top: 32px;
+    
+    text-align: center;
+    line-height: 2em;
+}
+
+.error {
+    color: red;
+}
+
+.error a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+#position {
+    display: block;
+    
+    text-align: center;
+    font-size: 140%;
+}
+
+#controls {
+    display: block;
+    text-align: center;
+}
+
+#controls > p > label {
+    padding-right: 0.75em;
+}
+
+#controls > p > input, #controls > p > .iPhoneCheckContainer {
+    vertical-align: middle;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    
+    font-size: 80%;
+}

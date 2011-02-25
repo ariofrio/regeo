@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Where am I? – What is my latitude and longitude?</title>
+    <link rel="stylesheet" type="text/css" href="basic.css">
+    
+    <script src="iphone-style-checkboxes/prototype/prototype.js" type="text/javascript" charset="utf-8"></script>
+    <script src="iphone-style-checkboxes/prototype/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+    <script src="iphone-style-checkboxes/prototype/iphone-style-checkboxes.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="iphone-style-checkboxes/style.css" type="text/css" media="screen" charset="utf-8" />
+
+    <script type="text/javascript" src="util.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+</head>
+<body>
+    <hgroup>
+        <h1>Where am I?</h1>
+        <h2>What is my latitude and longitude?</h2>
+    </hgroup>
+    <ul id="notifications">
+        <li class="unsupported error">You are somewhere. This page requires a modern browser that supports the <a href="http://en.wikipedia.org/wiki/W3C_Geolocation_API">GeoLocation API</a>.</li>
+    </ul>
+    <section id="position">
+        <p id="longitude"></p>
+        <p id="latitude"></p>
+        <p id="accuracy"></p>
+    </section>
+    <section id="controls">
+        <p>
+            <label for="enableHighAccuracy"><strong>High Accuracy:</strong></label>
+            <input type="checkbox" id="enableHighAccuracy">
+        </p>
+    </section>
+    <footer>
+        <p>Brought to you by <a href="http://riofrios.com/">Andres Riofrio</a>.</p>
+    </footer>
+</body>
+</html>
