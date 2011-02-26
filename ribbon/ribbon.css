@@ -1,0 +1,138 @@
+/* From jbalogh's ribbon.css at 
+ * <http://people.mozilla.com/~jbalogh/ribbon/ribbon.css>. */
+
+@font-face {
+  font-family: Collegiate;
+  src: url("Collegiate.ttf");
+}
+
+.ribbon-holder {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  height: 10em;
+  
+  font-size: 16px;
+}
+
+.right.ribbon-holder {
+  right: 0;
+}
+
+.left.ribbon-holder {
+  left: 0;
+}
+
+.bottom.ribbon-holder {
+  top: auto;
+  bottom: 0;
+}
+
+.ribbon,
+.ribbon:hover {
+  text-decoration: none;
+}
+
+.ribbon {
+  font-family: Collegiate, sans-serif;
+  letter-spacing: -.1px;
+  opacity: 0.95;
+
+  padding: 0.25em 0;
+  position: relative;
+
+  /* Defaults friendly for white pages. */
+  -moz-box-shadow: 0 0 13px #888;
+  -webkit-box-shadow: 0 0 13px #888;
+  color: #FFF;
+  display: block;
+  line-height: 1.35em;
+}
+
+:not(.bottom) > .ribbon {
+  top: 2.5em;
+}
+
+.bottom > .ribbon {
+  bottom: -5.5em;
+}
+
+.ribbon > span {
+  padding: 0.1em 3em;
+}
+
+:not(.bottom).right > .ribbon, .bottom.left > .ribbon {
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+:not(.bottom).left > .ribbon, .bottom.right > .ribbon {
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left .ribbon {
+  left: -2.6em;
+}
+
+.right .ribbon {
+  right: -2.6em;
+}
+
+.white.ribbon {
+  color: #111;
+  background-color: #F5F5F5;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f3f3f3), to(#fff));
+  -moz-box-shadow: 0 0 13px #999;
+  -webkit-box-shadow: 0 0 13px #999;
+  text-shadow: 0 0 .05em;
+}
+
+.white.ribbon > span {
+  border: 1px solid #cecece;
+}
+
+.red.ribbon {
+  background-color: #9a0000;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9a0000), to(#a90000));
+}
+
+.red.ribbon > span {
+  border: 1px solid #bf6060;
+}
+
+.green.ribbon {
+  background-color: #006e00;
+  background: -webkit-gradient(linear, left bottom, left top, from(#006e00), to(#007200));
+}
+
+.green.ribbon > span {
+  border: 1px solid #6bac6b;
+}
+
+.darkblue.ribbon {
+  background-color: #121621;
+  color: #ecedee;
+}
+
+.darkblue.ribbon > span {
+  border: 1px solid #53565e;
+}
+
+.orange.ribbon {
+  background-color: #E57504;
+  background: -webkit-gradient(linear, left bottom, left top, from(#dc7202), to(#ee7906));
+}
+
+.orange.ribbon > span {
+  border: 1px solid #ebaa65;
+}
+
+.gray.ribbon {
+  background-color: #6d6d6d;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6a6a6a) to(#6d6d6d));
+}
+
+.gray.ribbon > span {
+  border: 1px solid #a4a4a4;
+}
